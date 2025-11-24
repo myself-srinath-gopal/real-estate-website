@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import 'tailwindcss';
+
+/* Custom Shadows */
+.shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-floating {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-glass {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Custom Transitions */
+.transition-smooth {
+    transition: all 300ms ease-out;
+}
+
+.transition-micro {
+    transition: all 200ms ease-out;
+}
+
+/* Typography Utilities */
+
+.font-body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-display {
+    font-family: "Playfair", serif;
+}
+
+.glass-effect {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-purple-blue {
+    @apply bg-linear-to-r from-(--primary-600) to-(--secondary-700);
+}
+
+.bg-gradient-indigo-violet {
+    @apply bg-linear-to-r from-(--indigo-500) to-(--purple-600);
+}
+
+.bg-gradient-premium {
+    @apply bg-linear-to-r from-(--primary-100) via-(--secondary-50) to-(--primary-50);
+}
+
+/* Custom Components */
+.btn-primary {
+    @apply bg-(--primary) text-white font-semibold py-3 px-6 transition-(--micro) hover:bg-(--primary-700) focus:outline-none focus:ring-2 focus:ring-(--primary-400) focus:ring-offset-2 shadow-(--shadow-soft) hover:shadow-(--floating);
+}
+
+.btn-secondary {
+    @apply bg-(--secondary) text-white font-semibold py-3 px-6 rounded-md transition-(--micro) hover:bg-(--secondary-800) focus:outline-none focus:ring-2 focus:ring-(--secondary-400) focus:ring-offset-2 shadow-(--soft) hover:shadow-(--floating);
+}
+
+.btn-accent {
+    @apply bg-(--accent) text-white font-semibold py-3 px-6 rounded-md transition-(--micro) hover:bg-(--accent-600) focus:outline-none focus:ring-2 focus:ring-(--accent-400) focus:ring-offset-2 shadow-(--soft) hover:shadow-(--floating);
+}
+
+.btn-glass {
+    @apply text-(--primary-700) font-semibold py-3 px-6 rounded-md transition-(--micro) hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-(--primary-400) focus:ring-offset-2;
+}
+
+.card {
+    @apply bg-white rounded-xl shadow-(--soft) border border-gray-200 p-6 transition-(--smooth) hover:shadow-(--floating);
+}
+
+.card-glass {
+    @apply rounded-xl p-6 transition-(--smooth);
+}
+
+.input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-(--primary-400) focus:border-transparent transition-(--micro);
+}
+
+/* Animations */
+.animate-pulse-soft {
+    animation: pulseSoft 3s infinite;
+}
+
+@keyframes pulseSoft {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulseSoft {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.animate-pulse-soft {
+    animation: pulseSoft 3s infinite;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
