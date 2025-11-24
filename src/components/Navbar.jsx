@@ -11,7 +11,7 @@ const Navbar = () => {
                             <svg className="h-8 w-8 text-(--primary)" viewBox="0 0 32 32" fill="currentColor">
                                 <path d="M16 2L4 12v18h6v-8h12v8h6V12L16 2zm0 4l8 6v14h-2v-8H10v8H8V12l8-6z" />
                             </svg>
-                            <span className="ml-2 text-2xl font-display font-bold text-(--primary) tracking-tighter">Estate Elite</span>
+                            <span className="ml-2 text-3xl font-display font-bold text-(--primary) tracking-tighter">Estate Elite</span>
                         </a>
                     </div>
 

@@ -52,7 +52,7 @@
 
 /* Custom Components */
 .btn-primary {
-    @apply bg-(--primary) text-white font-semibold py-3 px-6 transition-(--micro) hover:bg-(--primary-700) focus:outline-none focus:ring-2 focus:ring-(--primary-400) focus:ring-offset-2 shadow-(--shadow-soft) hover:shadow-(--floating);
+    @apply bg-(--primary) text-white font-semibold py-3 px-6 rounded-full transition-(--micro) hover:bg-(--primary-700) focus:outline-none focus:ring-2 focus:ring-(--primary-400) focus:ring-offset-2 shadow-(--shadow-soft) hover:shadow-(--floating);
 }
 
 .btn-secondary {
