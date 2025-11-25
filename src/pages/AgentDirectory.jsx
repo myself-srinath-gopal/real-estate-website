@@ -284,7 +284,7 @@ const AgentDirectory = () => {
                                         <div className="flex justify-center space-x-3 mb-6">
                                             {
                                                 agent.skills.map((skill, index) => (
-                                                    <div key={index} className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center" title={skill.label}>
+                                                    <div key={index} className="px-3 py-2 bg-primary-100 rounded-full flex items-center justify-center border border-gray-300" title={skill.label}>
                                                         <span className="text-xs font-bold text-primary">{skill.label}</span>
                                                     </div>
                                                 ))
@@ -293,9 +293,7 @@ const AgentDirectory = () => {
 
                                         <div className="space-y-3">
                                             <button className="w-full btn-primary text-sm py-2">
-                                                <svg className="w-4 h-4 mr-2 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.955 8.955 0 01-4.126-.98L3 20l1.98-5.874A8.955 8.955 0 013 12c0-4.418 3.582-8 8-8s8 3.582 8 8z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle-icon lucide-message-circle w-4 h-4 inline mr-2"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
                                                 {agent.message}
                                             </button>
                                         </div>

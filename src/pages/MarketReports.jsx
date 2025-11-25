@@ -3,36 +3,36 @@ import React from 'react'
 const MarketReports = () => {
     return (
         <>
-            <section className="relative bg-linear-to-br from-primary-50 to-white overflow-hidden py-20">
-                <div className="absolute inset-0 bg-linear-to-r from-primary/10 to-transparent"></div>
+            <section className="relative bg-linear-to-br from-(--primary-50) to-white overflow-hidden py-20">
+                <div className="absolute inset-0 bg-linear-to-r from-(--primary/10) to-transparent"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center space-y-8">
                         <div className="space-y-4">
-                            <h1 className="text-4xl lg:text-6xl font-display font-semibold text-text-primary leading-tight">
-                                Market Intelligence That
-                                <span className="text-accent">Drives</span> Success
+                            <h1 className="text-4xl lg:text-6xl font-display font-semibold text-(--text-(--primary)) leading-tight tracking-tighter">
+                                Market Intelligence That&nbsp;
+                                <span className="text-(--accent)">Drives</span> Success
                             </h1>
-                            <p className="text-lg text-text-secondary leading-relaxed max-w-3xl mx-auto">
+                            <p className="text-lg text-(--text-secondary) leading-relaxed max-w-3xl mx-auto">
                                 Access comprehensive market analysis, trend forecasts, and investment insights from our expert analysts. Professional-grade intelligence for informed real estate decisions.
                             </p>
                         </div>
 
                         <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
                             <div className="bg-white rounded-xl shadow-soft p-6 border border-gray-200">
-                                <div className="text-2xl font-bold text-primary mb-1">47</div>
-                                <div className="text-sm text-text-secondary">Market Reports</div>
+                                <div className="text-2xl font-bold text-(--primary) mb-1">47</div>
+                                <div className="text-sm text-(--text-secondary)">Market Reports</div>
                             </div>
                             <div className="bg-white rounded-xl shadow-soft p-6 border border-gray-200">
-                                <div className="text-2xl font-bold text-success mb-1">12.5%</div>
-                                <div className="text-sm text-text-secondary">Avg. Market Growth</div>
+                                <div className="text-2xl font-bold text-(--success) mb-1">12.5%</div>
+                                <div className="text-sm text-(--text-secondary)">Avg. Market Growth</div>
                             </div>
                             <div className="bg-white rounded-xl shadow-soft p-6 border border-gray-200">
-                                <div className="text-2xl font-bold text-accent mb-1">8.2K</div>
-                                <div className="text-sm text-text-secondary">Professional Readers</div>
+                                <div className="text-2xl font-bold text-(--accent) mb-1">8.2K</div>
+                                <div className="text-sm text-(--text-secondary)">Professional Readers</div>
                             </div>
                             <div className="bg-white rounded-xl shadow-soft p-6 border border-gray-200">
-                                <div className="text-2xl font-bold text-text-primary mb-1">95%</div>
-                                <div className="text-sm text-text-secondary">Accuracy Rate</div>
+                                <div className="text-2xl font-bold text-text-(--primary) mb-1">95%</div>
+                                <div className="text-sm text-(--text-secondary)">Accuracy Rate</div>
                             </div>
                         </div>
                     </div>
@@ -42,32 +42,32 @@ const MarketReports = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Featured Market Reports</h2>
-                        <p className="text-lg text-text-secondary max-w-2xl mx-auto">Our latest comprehensive analysis and market predictions from industry-leading experts.</p>
+                        <h2 className="text-3xl font-display font-semibold text-text-(--primary) mb-4 tracking-tighter">Featured Market Reports</h2>
+                        <p className="text-lg text-(--text-secondary) max-w-2xl mx-auto">Our latest comprehensive analysis and market predictions from industry-leading experts.</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div className="card group cursor-pointer">
                             <div className="flex items-start space-x-4 mb-4">
-                                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center shrink-0">
-                                    <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div className="w-16 h-16 bg-(--primary-100) rounded-lg flex items-center justify-center shrink-0">
+                                    <svg className="w-8 h-8 text-(--primary)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                     </svg>
                                 </div>
                                 <div className="flex-1">
                                     <div className="flex items-center space-x-2 mb-2">
-                                        <span className="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded-full">Q4 2024</span>
-                                        <span className="px-2 py-1 bg-success-100 text-success text-xs font-medium rounded-full">New</span>
+                                        <span className="px-2 py-1 bg-(--primary-100) text-(--primary) text-xs font-medium rounded-full">Q4 2024</span>
+                                        <span className="px-2 py-1 bg-(--success-100) text-(--success) text-xs font-medium rounded-full">New</span>
                                     </div>
-                                    <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-micro">Quarterly Market Analysis: Urban Growth Trends</h3>
-                                    <p className="text-text-secondary text-sm mb-4">Comprehensive analysis of metropolitan market performance, emerging neighborhoods, and investment opportunities for Q4 2024.</p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-4 text-sm text-text-secondary">
+                                    <h3 className="text-xl font-semibold text-text-(--primary) mb-2 group-hover:text-(--primary) transition-micro">Quarterly Market Analysis: Urban Growth Trends</h3>
+                                    <p className="text-(--text-secondary) text-sm mb-4">Comprehensive analysis of metropolitan market performance, emerging neighborhoods, and investment opportunities for Q4 2024.</p>
+                                    <div className="flex max-[480px]:flex-col max-[480px]:items-start space-y-3 items-center justify-between">
+                                        <div className="flex items-center space-x-4 text-sm text-(--text-secondary)">
                                             <span>47 pages</span>
                                             <span>•</span>
                                             <span>Dec 15, 2024</span>
                                         </div>
-                                        <button className="text-primary hover:text-primary-700 font-medium text-sm transition-micro">Download PDF</button>
+                                        <button className="text-(--primary) hover:text-(--primary)-700 font-medium text-sm transition-micro">Download PDF</button>
                                     </div>
                                 </div>
                             </div>
@@ -75,25 +75,25 @@ const MarketReports = () => {
 
                         <div className="card group cursor-pointer">
                             <div className="flex items-start space-x-4 mb-4">
-                                <div className="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center shrink-0">
-                                    <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div className="w-16 h-16 bg-(--accent-100) rounded-lg flex items-center justify-center shrink-0">
+                                    <svg className="w-8 h-8 text-(--accent)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                     </svg>
                                 </div>
                                 <div className="flex-1">
                                     <div className="flex items-center space-x-2 mb-2">
-                                        <span className="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded-full">Premium</span>
-                                        <span className="px-2 py-1 bg-warning-100 text-warning text-xs font-medium rounded-full">Trending</span>
+                                        <span className="px-2 py-1 bg-(--accent-100) text-(--accent) text-xs font-medium rounded-full">Premium</span>
+                                        <span className="px-2 py-1 bg-(--warning-100) text-(--warning) text-xs font-medium rounded-full">Trending</span>
                                     </div>
-                                    <h3 className="text-xl font-semibold text-text-primary mb-2 group-hover:text-primary transition-micro">Luxury Market Outlook 2025</h3>
-                                    <p className="text-text-secondary text-sm mb-4">In-depth analysis of luxury property trends, high-net-worth buyer behavior, and premium market forecasts.</p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center space-x-4 text-sm text-text-secondary">
+                                    <h3 className="text-xl font-semibold text-text-(--primary) mb-2 group-hover:text-(--primary) transition-micro">Luxury Market Outlook 2025</h3>
+                                    <p className="text-(--text-secondary) text-sm mb-4">In-depth analysis of luxury property trends, high-net-worth buyer behavior, and premium market forecasts.</p>
+                                    <div className="flex max-[480px]:flex-col max-[480px]:items-start space-y-3 items-center justify-between">
+                                        <div className="flex items-center space-x-4 text-sm text-(--text-secondary)">
                                             <span>62 pages</span>
                                             <span>•</span>
                                             <span>Dec 10, 2024</span>
                                         </div>
-                                        <button className="text-primary hover:text-primary-700 font-medium text-sm transition-micro">Download PDF</button>
+                                        <button className="text-(--primary) hover:text-(--primary)-700 font-medium text-sm transition-micro">Download PDF</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,19 +105,19 @@ const MarketReports = () => {
             <section className="py-16 bg-surface">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Interactive Market Dashboard</h2>
-                        <p className="text-lg text-text-secondary max-w-2xl mx-auto">Explore real-time market data with our interactive visualization tools.</p>
+                        <h2 className="text-3xl font-display font-semibold text-(--text-primary) mb-4 tracking-tighter">Interactive Market Dashboard</h2>
+                        <p className="text-lg text-(--text-secondary) max-w-2xl mx-auto">Explore real-time market data with our interactive visualization tools.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2">
                             <div className="card">
                                 <div className="flex items-center justify-between mb-6">
-                                    <h3 className="text-lg font-semibold text-text-primary">Market Price Trends</h3>
+                                    <h3 className="text-lg font-semibold text-(--text-primary)">Market Price Trends</h3>
                                     <div className="flex space-x-2">
-                                        <button className="px-3 py-1 bg-primary text-white text-sm rounded-md">1Y</button>
-                                        <button className="px-3 py-1 bg-gray-200 text-text-secondary text-sm rounded-md hover:bg-gray-300 transition-micro">6M</button>
-                                        <button className="px-3 py-1 bg-gray-200 text-text-secondary text-sm rounded-md hover:bg-gray-300 transition-micro">3M</button>
+                                        <button className="px-3 py-1 bg-(--primary) text-white text-sm rounded-md">1Y</button>
+                                        <button className="px-3 py-1 bg-gray-200 text-(--text-secondary) text-sm rounded-md hover:bg-gray-300 transition-micro">6M</button>
+                                        <button className="px-3 py-1 bg-gray-200 text-(--text-secondary) text-sm rounded-md hover:bg-gray-300 transition-micro">3M</button>
                                     </div>
                                 </div>
 
@@ -125,12 +125,12 @@ const MarketReports = () => {
                                     <svg className="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="none">
                                         <defs>
                                             <pattern id="grid" width="40" height="20" patternUnits="userSpaceOnUse">
-                                                <path d="M 40 0 L 0 0 0 20" fill="none" stroke="#e5e7eb" strokeWidth="1" />
+                                                <path d="M 40 0 L 0 0 0 20" fill="none" stroke="#e5e7eb" strokeWidth=".5" />
                                             </pattern>
                                         </defs>
                                         <rect width="100%" height="100%" fill="url(#grid)" />
 
-                                        <polyline fill="none" stroke="#1a365d" strokeWidth="3" points="0,150 50,140 100,130 150,125 200,120 250,115 300,110 350,105 400,100" />
+                                        <polyline fill="none" stroke="#1a365d" strokeWidth="1" points="0,150 50,140 100,130 150,125 200,120 250,115 300,110 350,105 400,100" />
 
                                         <circle cx="100" cy="130" r="4" fill="#d69e2e" />
                                         <circle cx="200" cy="120" r="4" fill="#d69e2e" />
@@ -138,23 +138,23 @@ const MarketReports = () => {
                                         <circle cx="400" cy="100" r="4" fill="#38a169" />
                                     </svg>
 
-                                    <div className="absolute bottom-2 left-4 text-xs text-text-secondary">Jan 2024</div>
-                                    <div className="absolute bottom-2 right-4 text-xs text-text-secondary">Dec 2024</div>
-                                    <div className="absolute top-2 right-4 text-xs font-medium text-success">+12.5% YoY</div>
+                                    <div className="absolute bottom-2 left-4 text-xs text-(--text-secondary)">Jan 2024</div>
+                                    <div className="absolute bottom-2 right-4 text-xs text-(--text-secondary)">Dec 2024</div>
+                                    <div className="absolute top-2 right-4 text-xs font-medium text-(--success)">+12.5% YoY</div>
                                 </div>
 
                                 <div className="mt-4 flex items-center justify-between text-sm">
                                     <div className="flex items-center space-x-4">
                                         <div className="flex items-center space-x-2">
-                                            <div className="w-3 h-3 bg-primary rounded-full"></div>
-                                            <span className="text-text-secondary">Average Price</span>
+                                            <div className="w-3 h-3 bg-(--primary) rounded-full"></div>
+                                            <span className="text-(--text-secondary)">Average Price</span>
                                         </div>
                                         <div className="flex items-center space-x-2">
-                                            <div className="w-3 h-3 bg-accent rounded-full"></div>
-                                            <span className="text-text-secondary">Key Events</span>
+                                            <div className="w-3 h-3 bg-(--accent) rounded-full"></div>
+                                            <span className="text-(--text-secondary)">Key Events</span>
                                         </div>
                                     </div>
-                                    <button className="text-primary hover:text-primary-700 font-medium transition-micro">Export Data</button>
+                                    <button className="text-(--primary) hover:text-(--primary)-700 font-medium transition-micro">Export Data</button>
                                 </div>
                             </div>
                         </div>
@@ -162,52 +162,50 @@ const MarketReports = () => {
                         <div className="space-y-6">
                             <div className="card">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h4 className="font-semibold text-text-primary">Inventory Levels</h4>
-                                    <svg className="w-5 h-5 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <h4 className="font-semibold text-(--text-primary)">Inventory Levels</h4>
+                                    <svg className="w-5 h-5 text-(--warning)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4-8-4m16 0v10l-8 4-8-4V7" />
                                     </svg>
                                 </div>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center">
-                                        <span className="text-sm text-text-secondary">Available Units</span>
-                                        <span className="text-sm font-medium text-text-primary">2,847</span>
+                                        <span className="text-sm text-(--text-secondary)">Available Units</span>
+                                        <span className="text-sm font-medium text-(--text-primary)">2,847</span>
                                     </div>
                                     <div className="w-full bg-gray-200 rounded-full h-2">
-                                        <div className="bg-warning h-2 rounded-full w-[65%]"></div>
+                                        <div className="bg-(--warning) h-2 rounded-full w-[65%]"></div>
                                     </div>
-                                    <div className="text-xs text-text-secondary">65% of historical average</div>
+                                    <div className="text-xs text-(--text-secondary)">65% of historical average</div>
                                 </div>
                             </div>
 
                             <div className="card">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h4 className="font-semibold text-text-primary">Days on Market</h4>
-                                    <svg className="w-5 h-5 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <h4 className="font-semibold text-text-(--primary)">Days on Market</h4>
+                                    <svg className="w-5 h-5 text-(--success)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 </div>
                                 <div className="space-y-3">
                                     <div className="text-center">
-                                        <div className="text-2xl font-bold text-success mb-1">28</div>
-                                        <div className="text-sm text-text-secondary">Average Days</div>
+                                        <div className="text-2xl font-bold text-(--success) mb-1">28</div>
+                                        <div className="text-sm text-(--text-secondary)">Average Days</div>
                                     </div>
-                                    <div className="text-xs text-center text-success">↓ 15% from last quarter</div>
+                                    <div className="text-xs text-center text-(--success)">↓ 15% from last quarter</div>
                                 </div>
                             </div>
 
                             <div className="card">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h4 className="font-semibold text-text-primary">Price per Sq Ft</h4>
-                                    <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                                    </svg>
+                                    <h4 className="font-semibold text-text-(--primary)">Price per Sq Ft</h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-indian-rupee-icon lucide-indian-rupee w-5 h-5 text-(--primary)"><path d="M6 3h12"/><path d="M6 8h12"/><path d="m6 13 8.5 8"/><path d="M6 13h3"/><path d="M9 13c6.667 0 6.667-10 0-10"/></svg>
                                 </div>
                                 <div className="space-y-3">
                                     <div className="text-center">
-                                        <div className="text-2xl font-bold text-primary mb-1">$847</div>
-                                        <div className="text-sm text-text-secondary">Metro Average</div>
+                                        <div className="text-2xl font-bold text-(--primary) mb-1">$847</div>
+                                        <div className="text-sm text-(--text-secondary)">Metro Average</div>
                                     </div>
-                                    <div className="text-xs text-center text-success">↑ 8.2% year over year</div>
+                                    <div className="text-xs text-center text-(--success)">↑ 8.2% year over year</div>
                                 </div>
                             </div>
                         </div>
@@ -218,104 +216,102 @@ const MarketReports = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Report Categories</h2>
-                        <p className="text-lg text-text-secondary max-w-2xl mx-auto">Explore our comprehensive library of market intelligence across different sectors and timeframes.</p>
+                        <h2 className="text-3xl font-display font-semibold text-(--text-primary) mb-4">Report Categories</h2>
+                        <p className="text-lg text-(--text-secondary) max-w-2xl mx-auto">Explore our comprehensive library of market intelligence across different sectors and timeframes.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-micro">
-                                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="w-16 h-16 bg-(--primary-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-(--primary-200) transition-micro">
+                                <svg className="w-8 h-8 text-(--primary)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Quarterly Reports</h3>
-                            <p className="text-text-secondary text-sm mb-4">Comprehensive market analysis every quarter with detailed insights and forecasts.</p>
+                            <h3 className="text-lg font-semibold text-(--text-primary) mb-2">Quarterly Reports</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">Comprehensive market analysis every quarter with detailed insights and forecasts.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">12 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">12 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
 
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-micro">
-                                <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="w-16 h-16 bg-(--success-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-(--success-200) transition-micro">
+                                <svg className="w-8 h-8 text-(--success)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Monthly Trends</h3>
-                            <p className="text-text-secondary text-sm mb-4">Real-time market movements and emerging trends updated monthly.</p>
+                            <h3 className="text-lg font-semibold text-text-(--primary) mb-2">Monthly Trends</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">Real-time market movements and emerging trends updated monthly.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">24 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">24 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
 
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-micro">
-                                <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                                </svg>
+                            <div className="w-16 h-16 bg-(--accent-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-micro">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-indian-rupee-icon lucide-indian-rupee w-8 h-8 text-(--accent)"><path d="M6 3h12"/><path d="M6 8h12"/><path d="m6 13 8.5 8"/><path d="M6 13h3"/><path d="M9 13c6.667 0 6.667-10 0-10"/></svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Investment Analysis</h3>
-                            <p className="text-text-secondary text-sm mb-4">ROI projections, market opportunities, and investment strategy insights.</p>
+                            <h3 className="text-lg font-semibold text-(--text-primary) mb-2">Investment Analysis</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">ROI projections, market opportunities, and investment strategy insights.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">8 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">8 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
 
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-200 transition-micro">
-                                <svg className="w-8 h-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="w-16 h-16 bg-(--secondary-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-(--secondary-200) transition-micro">
+                                <svg className="w-8 h-8 text-(--secondary)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Neighborhood Focus</h3>
-                            <p className="text-text-secondary text-sm mb-4">Deep-dive analysis of specific neighborhoods and emerging areas.</p>
+                            <h3 className="text-lg font-semibold text-(--text-primary) mb-2">Neighborhood Focus</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">Deep-dive analysis of specific neighborhoods and emerging areas.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">15 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">15 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
 
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-warning-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-warning-200 transition-micro">
-                                <svg className="w-8 h-8 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="w-16 h-16 bg-(--warning-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-(--warning-200) transition-micro">
+                                <svg className="w-8 h-8 text-(--warning)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Economic Impact</h3>
-                            <p className="text-text-secondary text-sm mb-4">How economic factors influence real estate markets and pricing.</p>
+                            <h3 className="text-lg font-semibold text-(--text-primary) mb-2">Economic Impact</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">How economic factors influence real estate markets and pricing.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">6 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">6 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
 
                         <div className="card text-center group cursor-pointer">
-                            <div className="w-16 h-16 bg-error-100 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-error-200 transition-micro">
-                                <svg className="w-8 h-8 text-error" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div className="w-16 h-16 bg-(--error-100) rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-(--error-200) transition-micro">
+                                <svg className="w-8 h-8 text-(--error)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-semibold text-text-primary mb-2">Annual Predictions</h3>
-                            <p className="text-text-secondary text-sm mb-4">Long-term market forecasts and strategic outlook for the year ahead.</p>
+                            <h3 className="text-lg font-semibold text-(--text-primary) mb-2">Annual Predictions</h3>
+                            <p className="text-(--text-secondary) text-sm mb-4">Long-term market forecasts and strategic outlook for the year ahead.</p>
                             <div className="flex items-center justify-between text-sm">
-                                <span className="text-text-secondary">3 Reports</span>
-                                <span className="text-primary font-medium">View All →</span>
+                                <span className="text-(--text-secondary)">3 Reports</span>
+                                <span className="text-(--primary) font-medium">View All →</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 bg-surface">
+            <section className="py-16 bg-(--surface)">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Expert Commentary</h2>
-                        <p className="text-lg text-text-secondary max-w-2xl mx-auto">Insights from our market analysts and guest commentary from top-performing real estate professionals.</p>
+                        <h2 className="text-4xl font-display font-semibold text-(--text-primary) mb-4 tracking-tighter">Expert Commentary</h2>
+                        <p className="text-lg text-(--text-secondary) max-w-2xl mx-auto">Insights from our market analysts and guest commentary from top-performing real estate professionals.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
@@ -323,66 +319,66 @@ const MarketReports = () => {
                             <div className="flex items-start space-x-4 mb-4">
                                 <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Market analyst headshot" className="w-16 h-16 rounded-full object-cover" loading="lazy" />
                                 <div className="flex-1">
-                                    <h3 className="font-semibold text-text-primary mb-1">Dr. Marcus Chen</h3>
-                                    <p className="text-sm text-text-secondary mb-2">Lead Market Analyst</p>
-                                    <div className="flex items-center space-x-2 text-xs text-text-secondary">
+                                    <h3 className="font-semibold text-(--text-primary) mb-1">Dr. Marcus Chen</h3>
+                                    <p className="text-sm text-(--text-secondary) mb-2">Lead Market Analyst</p>
+                                    <div className="flex items-center space-x-2 text-xs text-(--text-secondary)">
                                         <span>Dec 18, 2024</span>
                                         <span>•</span>
                                         <span>5 min read</span>
                                     </div>
                                 </div>
                             </div>
-                            <h4 className="text-lg font-semibold text-text-primary mb-3">Q1 2025 Market Outlook: Cautious Optimism</h4>
-                            <p className="text-text-secondary text-sm mb-4">
+                            <h4 className="text-lg font-semibold text-(--text-primary) mb-3">Q1 2025 Market Outlook: Cautious Optimism</h4>
+                            <p className="text-(--text-secondary) text-sm mb-4">
                                 "While interest rate fluctuations continue to create uncertainty, we're seeing strong fundamentals in key metropolitan markets. The luxury segment shows particular resilience..."
                             </p>
-                            <button className="text-primary hover:text-primary-700 font-medium text-sm transition-micro">Read Full Analysis →</button>
+                            <button className="text-(--primary) hover:text-(--primary-700) font-medium text-sm transition-micro">Read Full Analysis →</button>
                         </div>
 
                         <div className="card">
                             <div className="flex items-start space-x-4 mb-4">
                                 <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Guest expert headshot" className="w-16 h-16 rounded-full object-cover" loading="lazy" />
                                 <div className="flex-1">
-                                    <h3 className="font-semibold text-text-primary mb-1">Sarah Rodriguez</h3>
-                                    <p className="text-sm text-text-secondary mb-2">Top 1% Agent, Manhattan</p>
-                                    <div className="flex items-center space-x-2 text-xs text-text-secondary">
+                                    <h3 className="font-semibold text-text-(--primary) mb-1">Sarah Rodriguez</h3>
+                                    <p className="text-sm text-(--text-secondary) mb-2">Top 1% Agent, Manhattan</p>
+                                    <div className="flex items-center space-x-2 text-xs text-(--text-secondary)">
                                         <span>Dec 15, 2024</span>
                                         <span>•</span>
                                         <span>Guest Post</span>
                                     </div>
                                 </div>
                             </div>
-                            <h4 className="text-lg font-semibold text-text-primary mb-3">Luxury Buyer Behavior in 2024</h4>
-                            <p className="text-text-secondary text-sm mb-4">
+                            <h4 className="text-lg font-semibold text-(--text-primary) mb-3">Luxury Buyer Behavior in 2024</h4>
+                            <p className="text-(--text-secondary) text-sm mb-4">
                                 "High-net-worth buyers are increasingly focused on lifestyle amenities and long-term value. We're seeing a shift toward properties that offer both luxury and practical investment potential..."
                             </p>
-                            <button className="text-primary hover:text-primary-700 font-medium text-sm transition-micro">Read Full Insights →</button>
+                            <button className="text-(--primary) hover:text-(--primary-700) font-medium text-sm transition-micro">Read Full Insights →</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 bg-primary text-white">
+            <section className="py-16 bg-(--primary) text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div className="space-y-8">
                         <div className="space-y-4">
-                            <h2 className="text-3xl font-display font-semibold">Stay Ahead of Market Trends</h2>
-                            <p className="text-lg text-primary-100 leading-relaxed">
+                            <h2 className="text-3xl font-display font-semibold tracking-tighter">Stay Ahead of Market Trends</h2>
+                            <p className="text-lg text-(--primary-100) leading-relaxed">
                                 Get exclusive market insights, early access to reports, and expert analysis delivered to your inbox.
                             </p>
                         </div>
 
                         <div className="max-w-md mx-auto">
                             <div className="flex space-x-4">
-                                <input type="email" placeholder="Enter your email address" className="flex-1 px-4 py-3 rounded-md text-text-primary focus:outline-none focus:ring-2 focus:ring-accent" />
+                                <input type="email" placeholder="Enter your email address" className="bg-white flex-1 px-4 py-3 rounded-md text-(--text-primary) focus:outline-none focus:ring-2 focus:ring-(--accent)" />
                                 <button className="btn-accent px-6 py-3 whitespace-nowrap">Subscribe</button>
                             </div>
-                            <p className="text-sm text-primary-200 mt-3">
+                            <p className="text-sm text-(--primary-200) mt-3">
                                 Join 8,200+ professionals who trust our market intelligence.
                             </p>
                         </div>
 
-                        <div className="flex items-center justify-center space-x-8 text-sm text-primary-200">
+                        <div className="flex items-center justify-center space-x-8 text-sm text-(--primary-200)">
                             <div className="flex items-center space-x-2">
                                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
