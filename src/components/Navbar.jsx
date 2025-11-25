@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
@@ -18,13 +19,13 @@ const Navbar = () => {
                     {/* Desktop Navigation */}
                     <div className="hidden lg:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <a href="/" className="text-(--primary) font-medium border-b-2 border-(--primary) pb-1">Home</a>
-                            <a href="/property_listings_advanced_search_results" className="text-(--text-secondary) hover:text-(--primary) transition-micro">Properties</a>
-                            <a href="/agent_directory_professional_network" className="text-(--text-secondary) hover:text-(--primary) transition-micro">Agents</a>
-                            <a href="/neighborhood_guides_market_intelligence" className="text-(--text-secondary) hover:text-(--primary) transition-micro">Neighborhoods</a>
-                            <a href="/market_reports_thought_leadership" className="text-(--text-secondary) hover:text-(--primary) transition-micro">Market Reports</a>
-                            <a href="/about_estate_elite_brand_authority" className="text-(--text-secondary) hover:text-(--primary) transition-micro">About</a>
-                            <a href="/contact_support_multi_level_engagement" className="btn-primary">Contact</a>
+                            <NavLink to="/" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">Home</NavLink>
+                            <NavLink to="/property_listings_advanced_search_results" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">Properties</NavLink>
+                            <NavLink to="/agent_directory_professional_network" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">Agents</NavLink>
+                            <NavLink to="/neighborhood_guides_market_intelligence" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">Neighborhoods</NavLink>
+                            <NavLink to="/market_reports_thought_leadership" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">Market Reports</NavLink>
+                            <NavLink to="/about_estate_elite_brand_authority" className="navlink text-(--text-secondary) hover:text-(--primary) transition-micro">About</NavLink>
+                            <NavLink to="/contact_support_multi_level_engagement" className="btn-primary">Contact</NavLink>
                         </div>
                     </div>
 
@@ -38,7 +39,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </nav>  
+        </nav>
     )
 }
 

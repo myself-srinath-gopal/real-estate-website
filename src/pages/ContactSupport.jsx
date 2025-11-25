@@ -1,0 +1,570 @@
+import React from 'react'
+
+const ContactSupport = () => {
+    return (
+        <>
+            <section className="relative bg-linear-to-br from-primary-50 to-white py-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center">
+                        <h1 className="text-4xl lg:text-5xl font-display font-semibold text-text-primary mb-6">
+                            Expert Support When You Need It Most
+                        </h1>
+                        <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                            From quick questions to comprehensive consultations, our team of real estate professionals is here to guide you through every step of your property journey.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#consultation" className="btn-primary">Schedule Consultation</a>
+                            <a href="#live-chat" className="btn-secondary">Start Live Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Multiple Ways to Connect</h2>
+                        <p className="text-lg text-text-secondary max-w-2xl mx-auto">Choose the support option that best fits your needs and timeline.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="card text-center">
+                            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Phone Support</h3>
+                            <p className="text-text-secondary mb-4">Speak directly with our experts</p>
+                            <div className="space-y-2 text-sm">
+                                <p className="font-semibold text-primary">(555) 123-4567</p>
+                                <p className="text-text-secondary">Mon-Fri: 8AM-8PM EST</p>
+                                <p className="text-text-secondary">Sat-Sun: 10AM-6PM EST</p>
+                            </div>
+                        </div>
+
+                        <div className="card text-center" id="live-chat">
+                            <div className="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-8 h-8 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Live Chat</h3>
+                            <p className="text-text-secondary mb-4">Instant answers to your questions</p>
+                            <div className="space-y-2 text-sm mb-4">
+                                <div className="flex items-center justify-center">
+                                    <div className="w-2 h-2 bg-success rounded-full mr-2"></div>
+                                    <span className="text-success font-medium">Online Now</span>
+                                </div>
+                                <p className="text-text-secondary">Average response: 30 seconds</p>
+                            </div>
+                            <button className="btn-accent w-full">Start Chat</button>
+                        </div>
+
+                        <div className="card text-center">
+                            <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Email Support</h3>
+                            <p className="text-text-secondary mb-4">Detailed responses within 24 hours</p>
+                            <div className="space-y-2 text-sm">
+                                <p className="font-semibold text-accent">support@estateelit.com</p>
+                                <p className="text-text-secondary">Response time: 2-4 hours</p>
+                                <p className="text-text-secondary">Business days</p>
+                            </div>
+                        </div>
+
+                        <div className="card text-center" id="consultation">
+                            <div className="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg className="w-8 h-8 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Office Visit</h3>
+                            <p className="text-text-secondary mb-4">Meet our team in person</p>
+                            <div className="space-y-2 text-sm">
+                                <p className="font-semibold text-warning">123 Luxury Ave</p>
+                                <p className="text-text-secondary">New York, NY 10001</p>
+                                <p className="text-text-secondary">By appointment only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-surface">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Send Us a Message</h2>
+                        <p className="text-lg text-text-secondary">Our intelligent routing system ensures your inquiry reaches the right expert.</p>
+                    </div>
+
+                    <div className="card">
+                        <form className="space-y-6">
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" className="block text-sm font-medium text-text-primary mb-2">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required className="input-field" />
+                                </div>
+                                <div>
+                                    <label for="lastName" className="block text-sm font-medium text-text-primary mb-2">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required className="input-field" />
+                                </div>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" className="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required className="input-field" />
+                                </div>
+                                <div>
+                                    <label for="phone" className="block text-sm font-medium text-text-primary mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" className="input-field" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="inquiryType" className="block text-sm font-medium text-text-primary mb-2">How can we help you? *</label>
+                                <select id="inquiryType" name="inquiryType" required className="input-field">
+                                    <option value>Select inquiry type</option>
+                                    <option value="property">Property Information</option>
+                                    <option value="buying">Buying Process</option>
+                                    <option value="selling">Selling My Property</option>
+                                    <option value="agent">Connect with Agent</option>
+                                    <option value="investment">Investment Opportunities</option>
+                                    <option value="market">Market Analysis</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="partnership">Business Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="priceRange" className="block text-sm font-medium text-text-primary mb-2">Price Range</label>
+                                    <select id="priceRange" name="priceRange" className="input-field">
+                                        <option value>Select price range</option>
+                                        <option value="under-500k">Under $500K</option>
+                                        <option value="500k-1m">$500K - $1M</option>
+                                        <option value="1m-2m">$1M - $2M</option>
+                                        <option value="2m-5m">$2M - $5M</option>
+                                        <option value="over-5m">Over $5M</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="location" className="block text-sm font-medium text-text-primary mb-2">Preferred Location</label>
+                                    <input type="text" id="location" name="location" placeholder="City, neighborhood, or ZIP code" className="input-field" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="timeline" className="block text-sm font-medium text-text-primary mb-2">Timeline</label>
+                                <select id="timeline" name="timeline" className="input-field">
+                                    <option value>Select timeline</option>
+                                    <option value="immediate">Ready now</option>
+                                    <option value="1-3months">1-3 months</option>
+                                    <option value="3-6months">3-6 months</option>
+                                    <option value="6-12months">6-12 months</option>
+                                    <option value="over-year">Over a year</option>
+                                    <option value="just-browsing">Just browsing</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" className="block text-sm font-medium text-text-primary mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us more about what you're looking for..." className="input-field resize-none"></textarea>
+                            </div>
+
+                            <div className="space-y-3">
+                                <p className="text-sm font-medium text-text-primary">Communication Preferences</p>
+                                <div className="flex flex-wrap gap-4">
+                                    <label className="flex items-center">
+                                        <input type="checkbox" name="contactMethod" value="email" className="rounded border-gray-300 text-primary focus:ring-primary" />
+                                        <span className="ml-2 text-sm text-text-secondary">Email updates</span>
+                                    </label>
+                                    <label className="flex items-center">
+                                        <input type="checkbox" name="contactMethod" value="phone" className="rounded border-gray-300 text-primary focus:ring-primary" />
+                                        <span className="ml-2 text-sm text-text-secondary">Phone calls</span>
+                                    </label>
+                                    <label className="flex items-center">
+                                        <input type="checkbox" name="contactMethod" value="text" className="rounded border-gray-300 text-primary focus:ring-primary" />
+                                        <span className="ml-2 text-sm text-text-secondary">Text messages</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                                <button type="submit" className="btn-primary flex-1">Send Message</button>
+                                <button type="button" className="btn-secondary">Schedule Call Instead</button>
+                            </div>
+
+                            <div className="bg-success-50 border border-success-200 rounded-lg p-4 mt-6">
+                                <div className="flex items-center">
+                                    <svg className="w-5 h-5 text-success mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <p className="text-sm text-success font-medium">Response Guarantee: We'll respond within 2 hours during business days</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 className="text-3xl font-display font-semibold text-text-primary mb-6">Schedule a Personal Consultation</h2>
+                            <p className="text-lg text-text-secondary mb-8">Get personalized guidance from our market experts. Whether you're buying, selling, or investing, our consultations provide tailored insights for your specific situation.</p>
+
+                            <div className="space-y-6">
+                                <div className="space-y-4">
+                                    <div className="flex items-start space-x-4">
+                                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center shrink-0">
+                                            <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold text-text-primary">Buyer Consultation</h3>
+                                            <p className="text-sm text-text-secondary">Market analysis, financing options, and property search strategy</p>
+                                            <p className="text-sm text-primary font-medium">30-45 minutes • Free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4">
+                                        <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center shrink-0">
+                                            <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold text-text-primary">Seller Consultation</h3>
+                                            <p className="text-sm text-text-secondary">Property valuation, marketing strategy, and timing recommendations</p>
+                                            <p className="text-sm text-accent font-medium">45-60 minutes • Free</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex items-start space-x-4">
+                                        <div className="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center shrink-0">
+                                            <svg className="w-6 h-6 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 className="font-semibold text-text-primary">Investment Analysis</h3>
+                                            <p className="text-sm text-text-secondary">ROI projections, market trends, and portfolio optimization</p>
+                                            <p className="text-sm text-success font-medium">60-90 minutes • $150</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="bg-primary-50 border border-primary-200 rounded-lg p-4">
+                                    <div className="flex items-center">
+                                        <svg className="w-5 h-5 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <p className="text-sm text-primary font-medium">100% satisfaction guarantee or your consultation fee refunded</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <h3 className="text-xl font-semibold text-text-primary mb-6">Book Your Consultation</h3>
+
+                            <div className="space-y-6">
+                                <div>
+                                    <label className="block text-sm font-medium text-text-primary mb-2">Select Consultation Type</label>
+                                    <select className="input-field">
+                                        <option>Buyer Consultation (Free)</option>
+                                        <option>Seller Consultation (Free)</option>
+                                        <option>Investment Analysis ($150)</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-text-primary mb-2">Preferred Date</label>
+                                    <input type="date" className="input-field" />
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-text-primary mb-2">Available Time Slots</label>
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <button className="p-3 border border-gray-300 rounded-lg text-sm hover:border-primary hover:bg-primary-50 transition-micro">9:00 AM</button>
+                                        <button className="p-3 border border-gray-300 rounded-lg text-sm hover:border-primary hover:bg-primary-50 transition-micro">10:30 AM</button>
+                                        <button className="p-3 border border-gray-300 rounded-lg text-sm hover:border-primary hover:bg-primary-50 transition-micro">1:00 PM</button>
+                                        <button className="p-3 border border-gray-300 rounded-lg text-sm hover:border-primary hover:bg-primary-50 transition-micro">3:30 PM</button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label className="block text-sm font-medium text-text-primary mb-2">Meeting Format</label>
+                                    <div className="space-y-2">
+                                        <label className="flex items-center">
+                                            <input type="radio" name="format" value="video" className="text-primary focus:ring-primary" />
+                                            <span className="ml-2 text-sm">Video Call (Recommended)</span>
+                                        </label>
+                                        <label className="flex items-center">
+                                            <input type="radio" name="format" value="phone" className="text-primary focus:ring-primary" />
+                                            <span className="ml-2 text-sm">Phone Call</span>
+                                        </label>
+                                        <label className="flex items-center">
+                                            <input type="radio" name="format" value="office" className="text-primary focus:ring-primary" />
+                                            <span className="ml-2 text-sm">In-Person (NYC Office)</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button className="btn-primary w-full">Confirm Booking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-surface">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Frequently Asked Questions</h2>
+                        <p className="text-lg text-text-secondary">Quick answers to common questions about our platform and services.</p>
+                    </div>
+
+                    <div className="mb-8">
+                        <div className="relative">
+                            <input type="text" placeholder="Search FAQ..." className="input-field pl-10" />
+                            <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mb-8">
+                        <button className="px-4 py-2 bg-primary text-white rounded-full text-sm">All</button>
+                        <button className="px-4 py-2 bg-gray-200 text-text-secondary rounded-full text-sm hover:bg-primary hover:text-white transition-micro">Platform</button>
+                        <button className="px-4 py-2 bg-gray-200 text-text-secondary rounded-full text-sm hover:bg-primary hover:text-white transition-micro">Buying</button>
+                        <button className="px-4 py-2 bg-gray-200 text-text-secondary rounded-full text-sm hover:bg-primary hover:text-white transition-micro">Selling</button>
+                        <button className="px-4 py-2 bg-gray-200 text-text-secondary rounded-full text-sm hover:bg-primary hover:text-white transition-micro">Agents</button>
+                    </div>
+
+                    <div className="space-y-4">
+                        <div className="card">
+                            <button className="w-full text-left flex justify-between items-center">
+                                <h3 className="font-semibold text-text-primary">How do I search for properties on Estate Elite?</h3>
+                                <svg className="w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div className="mt-4 text-text-secondary">
+                                <p>Use our intelligent search bar on the homepage or properties page. You can search by location, price range, property type, or even lifestyle preferences like "luxury condos near Central Park." Our AI-powered search understands natural language queries.</p>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <button className="w-full text-left flex justify-between items-center">
+                                <h3 className="font-semibold text-text-primary">Are the property listings updated in real-time?</h3>
+                                <svg className="w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="card">
+                            <button className="w-full text-left flex justify-between items-center">
+                                <h3 className="font-semibold text-text-primary">How do I connect with a real estate agent?</h3>
+                                <svg className="w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="card">
+                            <button className="w-full text-left flex justify-between items-center">
+                                <h3 className="font-semibold text-text-primary">What makes Estate Elite different from other real estate platforms?</h3>
+                                <svg className="w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="card">
+                            <button className="w-full text-left flex justify-between items-center">
+                                <h3 className="font-semibold text-text-primary">Is there a cost to use Estate Elite?</h3>
+                                <svg className="w-5 h-5 text-text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Self-Service Resources</h2>
+                        <p className="text-lg text-text-secondary">Comprehensive guides and tools to help you navigate the real estate process.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="card">
+                            <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M19 10a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">Video Tutorials</h3>
+                            <p className="text-text-secondary mb-4">Step-by-step guides for using our platform features</p>
+                            <ul className="space-y-2 text-sm text-text-secondary">
+                                <li>• Advanced search techniques</li>
+                                <li>• Setting up saved searches</li>
+                                <li>• Using market analytics tools</li>
+                                <li>• Connecting with agents</li>
+                            </ul>
+                            <a href="#" className="text-primary font-medium text-sm hover:text-primary-700 transition-micro">Watch Tutorials →</a>
+                        </div>
+
+                        <div className="card">
+                            <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">User Guides</h3>
+                            <p className="text-text-secondary mb-4">Comprehensive documentation for all features</p>
+                            <ul className="space-y-2 text-sm text-text-secondary">
+                                <li>• Getting started guide</li>
+                                <li>• Account management</li>
+                                <li>• Privacy settings</li>
+                                <li>• Notification preferences</li>
+                            </ul>
+                            <a href="#" className="text-accent font-medium text-sm hover:text-accent-700 transition-micro">Read Guides →</a>
+                        </div>
+
+                        <div className="card">
+                            <div className="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg className="w-6 h-6 text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">Troubleshooting</h3>
+                            <p className="text-text-secondary mb-4">Solutions to common technical issues</p>
+                            <ul className="space-y-2 text-sm text-text-secondary">
+                                <li>• Login problems</li>
+                                <li>• Search not working</li>
+                                <li>• Image loading issues</li>
+                                <li>• Mobile app problems</li>
+                            </ul>
+                            <a href="#" className="text-success font-medium text-sm hover:text-success-700 transition-micro">Get Help →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-16 bg-surface">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-display font-semibold text-text-primary mb-4">Visit Our Offices</h2>
+                        <p className="text-lg text-text-secondary">Meet our team in person at one of our premium locations.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="card">
+                            <div className="aspect-w-16 aspect-h-9 mb-4">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Estate Elite NYC office building" className="w-full h-48 object-cover rounded-lg" loading="lazy" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">New York City</h3>
+                            <div className="space-y-2 text-sm text-text-secondary mb-4">
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    123 Luxury Avenue, Suite 4500<br />New York, NY 10001
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    (555) 123-4567
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mon-Fri: 8AM-7PM<br />Sat: 10AM-5PM
+                                </p>
+                            </div>
+                            <button className="btn-secondary w-full text-sm">Get Directions</button>
+                        </div>
+
+                        <div className="card">
+                            <div className="aspect-w-16 aspect-h-9 mb-4">
+                                <img src="https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Estate Elite Miami office building" className="w-full h-48 object-cover rounded-lg" loading="lazy" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">Miami</h3>
+                            <div className="space-y-2 text-sm text-text-secondary mb-4">
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    456 Ocean Drive, Floor 20<br />Miami, FL 33139
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    (555) 987-6543
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mon-Fri: 9AM-6PM<br />Sat: 10AM-4PM
+                                </p>
+                            </div>
+                            <button className="btn-secondary w-full text-sm">Get Directions</button>
+                        </div>
+
+                        <div className="card">
+                            <div className="aspect-w-16 aspect-h-9 mb-4">
+                                <img src="https://images.pixabay.com/photo/2016/11/29/03/53/architecture-1867187_1280.jpg" alt="Estate Elite Los Angeles office building" className="w-full h-48 object-cover rounded-lg" loading="lazy" />
+                            </div>
+                            <h3 className="text-lg font-semibold text-text-primary mb-2">Los Angeles</h3>
+                            <div className="space-y-2 text-sm text-text-secondary mb-4">
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                    789 Sunset Boulevard, Suite 1200<br />Los Angeles, CA 90028
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    (555) 456-7890
+                                </p>
+                                <p className="flex items-center">
+                                    <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Mon-Fri: 8AM-6PM<br />Sat: 9AM-3PM
+                                </p>
+                            </div>
+                            <button className="btn-secondary w-full text-sm">Get Directions</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default ContactSupport
